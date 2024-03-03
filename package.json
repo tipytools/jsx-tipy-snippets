@@ -1,9 +1,9 @@
 {
-  "name": "jsx-tipy-snippets",
-  "displayName": "JSX Tipy UI Snippets",
-  "description": "JSX Tipy UI Snippets is a Visual Studio Code extension providing a comprehensive collection of React JSX code snippets tailored to streamline your development process. These snippets are designed to work seamlessly with Tailwind CSS, allowing you to quickly scaffold React components with Tailwind CSS styling.",
+  "name": "tipy-ui-snippets",
+  "displayName": "Tipy UI Snippets",
+  "description": "Tipy UI Snippets is a Visual Studio Code extension providing a comprehensive collection of React JSX/TSX code snippets tailored to streamline your development process. These snippets are designed to work seamlessly with Tailwind CSS, allowing you to quickly scaffold React components with Tailwind CSS styling.",
   "publisher": "Tipytools",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -16,6 +16,7 @@
     "Snippets"
   ],
   "keywords": [
+    "TSX",
     "JSX",
     "UI",
     "Snippets",
@@ -29,24 +30,28 @@
   ],
   "icon": "icon.ico",
   "galleryBanner": {
-    "color": "#000E18",
+    "color": "#01010A",
     "theme": "dark"
   },
   "pricing": "Free",
   "license": "SEE LICENSE IN LICENSE.txt",
-  "homepage": "https://github.com/tipytools/jsx-tipy-snippets/blob/main/README.md",
+  "homepage": "https://github.com/tipytools/tipy-ui-snippets/blob/main/README.md",
   "bugs": {
-    "url": "https://github.com/tipytools/jsx-tipy-snippets/issues",
+    "url": "https://github.com/tipytools/tipy-ui-snippets/issues",
     "email": "tipytools@outlook.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tipytools/jsx-tipy-snippets.git"
+    "url": "https://github.com/tipytools/tipy-ui-snippets.git"
   },
   "contributes": {
     "snippets": [
       {
         "language": "javascriptreact",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
         "path": "./snippets/snippets.code-snippets"
       }
     ]

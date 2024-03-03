@@ -1,13 +1,13 @@
 {
-  "JSX ScrollToTop": {
-    "prefix": "jsxscrolltotop",
+  "ScrollToTop": {
+    "prefix": "tipy-scrolltotop",
+    "isFileTemplate": true,
     "body": [
       "/**",
       "* This component allows you to smoothly scroll back to the top of the page when clicked.",
       "* It includes functionality to detect the scroll position and dynamically adjust its visibility",
       "* and animation based on the user's scroll behavior.",
-      "* The component utilizes React's useState and useEffect hooks for state management and event handling,",
-      "* along with the FontAwesome Icon component (FaChevronUp).",
+      "* along with the React Icon component (FaChevronUp).",
       "* Please note that this component requires Tailwind CSS for styling and Tailwind CSS Animate library for animation effects.",
       "*/",
       "import { useState, useEffect } from 'react';",
@@ -47,6 +47,6 @@
       "",
       "export default ScrollToTop;"
     ],
-    "description": "Inserts a React ScrollToTop component. This component allows users to smoothly scroll back to the top of the page when clicked. It includes functionality to detect the scroll position and dynamically adjust its visibility and animation based on the user's scroll behavior. The component utilizes React's useState and useEffect hooks for state management and event handling, along with the FontAwesome Icon component (FaChevronUp). Please note that this component requires Tailwind CSS for styling and Tailwind CSS Animate library for animation effects."
+    "description": "Inserts a React ScrollToTop component. This component allows users to smoothly scroll back to the top of the page when clicked. It includes functionality to detect the scroll position and dynamically adjust its visibility and animation based on the user's scroll behavior. The component utilizes React's useState and useEffect hooks for state management and event handling, along with the React Icon component (FaChevronUp). Please note that this component requires Tailwind CSS for styling and Tailwind CSS Animate library for animation effects."
   }
 }
