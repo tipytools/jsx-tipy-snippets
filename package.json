@@ -1,0 +1,37 @@
+{
+  "name": "jsx-tipy-snippets",
+  "displayName": "JSX Tipy Snippets",
+  "description": "JSX Tipy Snippets is a Visual Studio Code extension providing a comprehensive collection of React JSX code snippets tailored to streamline your development process. These snippets are designed to work seamlessly with Tailwind CSS, allowing you to quickly scaffold React components with Tailwind CSS styling.",
+  "publisher": "ms-vscode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "icon": "icon.ico",
+  "galleryBanner": {
+    "color": "#000E18",
+    "theme": "dark"
+  },
+  "pricing": "Free",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "homepage": "https://github.com/tipytools/jsx-tipy-snippets/blob/main/README.md",
+  "bugs": {
+    "url": "https://github.com/tipytools/jsx-tipy-snippets/issues",
+    "email": "sean@contoso.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tipytools/jsx-tipy-snippets.git"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
