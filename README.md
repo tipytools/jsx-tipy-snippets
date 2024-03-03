@@ -1,4 +1,4 @@
-# JSX Tipy Snippets
+# JSX Tipy UI Snippets
 
 JSX Tipy Snippets is a Visual Studio Code extension providing a comprehensive collection of React JSX code snippets tailored to streamline your development process. These snippets are designed to work seamlessly with Tailwind CSS, allowing you to quickly scaffold React components with Tailwind CSS styling.
 
@@ -44,4 +44,4 @@ This project is licensed under the [MIT License](/LICENSE.txt). Feel free to use
 
 ---
 
-Thank you for using JSX Tipy Snippets! We hope these snippets streamline your React development experience. If you have any questions or feedback, please don't hesitate to reach out.
+Thank you for using JSX Tipy Snippets! We hope these snippets streamline your React and Next JS development experience. If you have any questions or feedback, please don't hesitate to reach out.

@@ -7,6 +7,11 @@
   "engines": {
     "vscode": "^1.54.0"
   },
+  "author": {
+    "name": "Mauly dotDev",
+    "email": "mauly.dev@gmail.com",
+    "url": "https://maulydev.github.io"
+  },
   "categories": [
     "Snippets"
   ],
@@ -20,7 +25,7 @@
     "Frontend",
     "Tailwindcss",
     "Styled UI",
-    "Styles Components"
+    "Styled Components"
   ],
   "icon": "icon.ico",
   "galleryBanner": {
