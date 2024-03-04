@@ -30,7 +30,7 @@ Integrate Tipy UI Snippets into your workflow by leveraging its diverse range of
 
 ## Snipppets
 
-| Snippet Name       | Description                                                                                                                                                                 |
+| Snippet Command       | Description                                                                                                                                                                 |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `tipy-scrolltotop` | Inserts a ScrollToTop component. Utilizes React Icons for the scroll-to-top icon. Requires Tailwind CSS for styling and Tailwind CSS Animate library for animation effects. |
 
