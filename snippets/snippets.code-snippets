@@ -48,5 +48,85 @@
       "export default ScrollToTop;"
     ],
     "description": "Inserts a React ScrollToTop component. This component allows users to smoothly scroll back to the top of the page when clicked. It includes functionality to detect the scroll position and dynamically adjust its visibility and animation based on the user's scroll behavior. The component utilizes React's useState and useEffect hooks for state management and event handling, along with the React Icon component (FaChevronUp). Please note that this component requires Tailwind CSS for styling and Tailwind CSS Animate library for animation effects."
+  },
+  "NumberToStarRating": {
+    "prefix": "tipy-starrating",
+    "body": [
+      "/**",
+      "* This component converts a rating value within the range of 0 to 5 into a visual star rating, displaying the corresponding number of full and empty stars.",
+      "* For typescript remember to set type [number] for the rating prop",
+      "* const Rating = ({ rating } : { rating : number }) => {}",
+      "*/",
+      "const Rating = ({ rating }) => { const maxRating = 5; const fullStars = Math.floor(rating); const emptyStars = maxRating - fullStars;",
+      "const renderStars = () => {let stars = []; for (let i = 0; i < fullStars; i++) {stars.push(<span key={i}>&#9733;</span>)}; for (let i = 0; i < emptyStars; i++) {stars.push(<span key={fullStars + i}>&#9734;</span>)} return stars;};",
+      "return <div>{renderStars().map((star, index) => (<span key={index}>{star}</span>))}</div>;",
+      "}; export default Rating;"
+    ],
+    "description": "This component converts a rating value within the range of 0 to 5 into a visual star rating, displaying the corresponding number of full and empty stars."
+  },
+
+  "ButtonWithLoader": {
+    "prefix": "tipy-btnloader",
+    "body": [
+      "/*",
+      "* This component utilizes Tailwind CSS for styling and React Icons for the loading spinner.",
+      "* You are free to customize it to match the styling of your project.",
+      "*/",
+      "import React from 'react';",
+      "import { SiSpinrilla } from 'react-icons/si';",
+      "",
+      "const ButtonWithLoader = ({ isLoading }) => {",
+      "  return (",
+      "    <button",
+      "      type=\"submit\"",
+      "      disabled={isLoading}",
+      "      className=\"bg-primary hover:bg-primary-hover text-white w-full rounded-full disabled:bg-gray-400 disabled:cursor-not-allowed flex justify-center items-center\"",
+      "    >",
+      "      {isLoading ? (",
+      "        <span className=\"flex items-center justify-center gap-4\">",
+      "          <SiSpinrilla className=\"animate-spinner-ease-spin text-lg\" />{' '}",
+      "          <span>Please wait...</span>",
+      "        </span>",
+      "      ) : (",
+      "        'SUBMIT'",
+      "      )}",
+      "    </button>",
+      "  );",
+      "};",
+      "",
+      "export default ButtonWithLoader;"
+    ],
+    "description": "Creates a button component with loading animation and text"
+  },
+
+  "WhatsappCTA": {
+    "prefix": "tipy-whatsappcta",
+    "body": [
+      "/*",
+      "* This component creates a Call-to-Action (CTA) button for initiating WhatsApp conversations.",
+      "* It utilizes React Icons for the WhatsApp icon and opens WhatsApp with a specified phone number when clicked.",
+      "* You can customize the styling to match your project's design using Tailwind CSS.",
+      "*/",
+      "import { FaWhatsapp } from 'react-icons/fa';",
+      "",
+      "const WhatsappCTA = () => {",
+      "",
+      "  const openWhatsapp = () => {",
+      "    window.open(`https://wa.me/phoneNumber/`, '_blank', 'noopener, noreferrer');",
+      "  };",
+      "",
+      "  return (",
+      "    <span className='fixed bottom-5 left-5 lg:bottom-10 lg:left-10'>",
+      "      <div className='bg-primary/20 rounded-full w-full h-full absolute inset-0 -z-10 animate-ping'></div>",
+      "      <button onClick={openWhatsapp} className='bg-white text-4xl hover:scale-110 duration-500 text-primary p-3 rounded-full shadow-lg'>",
+      "        <FaWhatsapp />",
+      "      </button>",
+      "    </span>",
+      "  );",
+      "};",
+      "",
+      "export default WhatsappCTA;"
+    ],
+    "description": "Creates a Call-to-Action (CTA) button for initiating WhatsApp conversations. Uses React Icons for the WhatsApp icon and opens WhatsApp with a specified phone number when clicked."
   }
 }

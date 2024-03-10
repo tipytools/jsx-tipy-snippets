@@ -3,7 +3,7 @@
   "displayName": "Tipy UI Snippets",
   "description": "Tipy UI Snippets is a Visual Studio Code extension providing a comprehensive collection of React JSX/TSX code snippets tailored to streamline your development process. These snippets are designed to work seamlessly with Tailwind CSS, allowing you to quickly scaffold React components with Tailwind CSS styling.",
   "publisher": "Tipytools",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.54.0"
   },
