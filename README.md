@@ -30,12 +30,13 @@ Integrate Tipy UI Snippets into your workflow by leveraging its diverse range of
 
 ## Snipppets
 
-| Snippet Command    | Description                                                                                                                                                                        |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `tipy-scrolltotop` | Inserts a ScrollToTop component. Utilizes React Icons for the scroll-to-top icon. Requires Tailwind CSS for styling and Tailwind CSS Animate library for animation effects.        |
-| `tipy-starrating`  | This component converts a rating value within the range of 0 to 5 into a visual star rating, displaying the corresponding number of full and empty stars.                          |
-| `tipy-btnloader`   | Creates a Call-to-Action (CTA) button for initiating WhatsApp conversations. Uses React Icons for the WhatsApp icon and opens WhatsApp with a specified phone number when clicked. |
-| `tipy-whatsappcta` | Creates a button component with loading animation and text. This component utilizes Tailwind CSS for styling and React Icons for the loading spinner.                              |
+| Snippet Command       | Description                                                                                                                                                                        |
+| ------------------    | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `tipy-scrolltotop`    | Inserts a ScrollToTop component. Utilizes React Icons for the scroll-to-top icon. Requires Tailwind CSS for styling and Tailwind CSS Animate library for animation effects.        |
+| `tipy-starrating`     | This component converts a rating value within the range of 0 to 5 into a visual star rating, displaying the corresponding number of full and empty stars.                          |
+| `tipy-btnloader`      | Creates a Call-to-Action (CTA) button for initiating WhatsApp conversations. Uses React Icons for the WhatsApp icon and opens WhatsApp with a specified phone number when clicked. |
+| `tipy-whatsappcta`    | Creates a button component with loading animation and text. This component utilizes Tailwind CSS for styling and React Icons for the loading spinner.                              |
+| `tipy-offlinealert`   | Creates an offline alert component. This component utilizes Tailwind CSS for styling.                                                                                              |
 
 ## Contribution
 

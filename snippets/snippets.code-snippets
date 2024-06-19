@@ -128,5 +128,40 @@
       "export default WhatsappCTA;"
     ],
     "description": "Creates a Call-to-Action (CTA) button for initiating WhatsApp conversations. Uses React Icons for the WhatsApp icon and opens WhatsApp with a specified phone number when clicked."
+  },
+  "OfflineAlert": {
+    "prefix": "tipy-offlinealert",
+    "body": [
+      "/*",
+      "* It is triggered(slides in) when you loose internet connection.",
+      "* You can customize the styling to match your project's design using Tailwind CSS.",
+      "*/",
+      "",
+      "import React, { useEffect, useState } from 'react';",
+
+      "const HasInternet = () => {",
+        "const [isOnline, setIsOnline] = useState<boolean>(true);",
+
+        "useEffect(() => {",
+          "window.addEventListener('online', () => setIsOnline(true));",
+          "window.addEventListener('offline', () => setIsOnline(false));",
+
+          "return () => {",
+              "window.addEventListener('online', () => setIsOnline(true));",
+              "window.addEventListener('offline', () => setIsOnline(false));",
+          "};",
+
+        "}, []);",
+
+        "return (",
+            "<div className={`bg-red-500 fixed bottom-0 inset-x-0 z-50 pointer-events-none duration-500 ease-in-out ${!isOnline ? 'translate-y-0' : 'translate-y-full'}`}>",
+              "<p className='text-white text-center w-full p-1'>Oops! you're offline!</p>",
+            "</div>",
+          ");",
+        "};",
+        "",
+      "export default HasInternet;"
+    ],
+    "description": "Creates an offline alert banner at the bottom of your app"
   }
 }
